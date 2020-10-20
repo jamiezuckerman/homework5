@@ -2,7 +2,7 @@ body{
   font-family: 'Raleway', sans-serif; /* Test for this*/
   margin: 0;
   padding: 0;
-  font-size: 16pt; /* test for this! Make all sizes em or rem */
+  font-size: 1.4em; /* test for this! Make all sizes em or rem */
   background-image: url('../images/concrete_seamless.png');
 }
 
@@ -53,27 +53,39 @@ footer{
 /*Begin your code here*/
 /*Keyframes for animation*/
 
+
 @-webkit-keyframes logo_wiggle{
+  from {width:25px;}
+  to {width: 420px;}
   /*Your code here.*/
 
 }
 
 @keyframes logo_wiggle{
-  /*Your code here.*/
+  
+  from {width:25px;}
+  to {width: 420px;}/*Your code here.*/
 
 } 
 
 #logo{
    /*Your code here.*/
+   animation-name: logo_wiggle;
+   animation-duration: 15s;
  
 }
 
 /* Cards! */
 .pricing{
     min-height: 500px;
-    /*Your code here.*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*Your code here.* missing one line/
     /*Don't forget to vertically and horizontally alight the card*/
-  
+
+    
 }
 
 .card {
@@ -83,6 +95,8 @@ footer{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
+  flex-basis: 400px;
+
 
 }
 
