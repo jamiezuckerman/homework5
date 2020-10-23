@@ -82,7 +82,9 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-items: flex-start;
     /*Your code here.* missing one line/
+    
     /*Don't forget to vertically and horizontally alight the card*/
 
     
@@ -142,6 +144,9 @@ footer{
 /* Gallery! */
 .gallery{
   min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   /*Your code here again.*/
 }
 
@@ -156,10 +161,16 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
 .nav_links{
   /*Your code here again.*/
+
+  flex-flow: column;
 }
 
 .nav_item a{
@@ -179,6 +190,7 @@ header{
   /* Cards! */
   .card {
     /*Your  code here again.*/
+    flex-basis: 225px;
   }
 
   .card_big{
@@ -188,11 +200,18 @@ header{
 
   /* Navbar */
   header{
-    /*Your code here again.*/  
+    /*Your code here again.*/ 
+    display: flex;
+    justify-content: flex-start;
+    
+  
   }
 
   .nav_links{
     /*Your code here again.*/  
+    display: flex;
+    justify-content: flex-end;
+    
   }
 
   .nav_item a{
@@ -206,7 +225,19 @@ header{
   }
   /*Your code here again.*/
   /*You will want four selectors*/  
+  .body{
+    background-image: none;
+  }
+  .pricing{
+    align-items: start;
+  }
+  .gallery{
+    display: none;
+  }
 }
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media (prefers-reduced-motion: reduce){
+
+}
